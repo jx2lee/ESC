@@ -28,11 +28,18 @@ type CatIndexForm struct {
 }
 
 type CatMasterForm struct {
-	ID        string `json:"id"`
-	Host        string `json:"host"`
-	Ip         string `json:"index"`
+	ID            string `json:"id"`
+	Host          string `json:"host"`
+	Ip            string `json:"index"`
 	Node          string `json:"node"`
 }
+
+type CatCountForm struct {
+	Epoch         string `json:"epoch"`
+	TimeStamp     string `json:"timestamp"`
+	DocCount         string `json:"count"`
+}
+
 
 type Node struct {
 	IP              string `json:"ip"`
